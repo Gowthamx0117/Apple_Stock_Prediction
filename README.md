@@ -1,22 +1,32 @@
-####Apple Stock Price Prediction
-##Overview
-This project is aimed at predicting Apple's stock price (AAPL) using historical data with a machine learning model based on LSTM (Long Short-Term Memory) neural networks. The model uses the Yahoo Finance API to fetch historical stock data and predict future trends based on the past stock prices.
+# Apple Stock Prediction using LSTM
 
-##Features
-Data Fetching: Downloads Apple's historical stock data from Yahoo Finance based on user-defined date ranges.
-Data Preprocessing: Scales the stock data using MinMaxScaler to prepare it for LSTM.
-Modeling: Utilizes an LSTM model to predict future stock prices based on past data.
-Visualization: Plots both actual and predicted stock prices for comparison.
-Technologies Used
-Python: Programming language used for the project.
-LSTM (Long Short-Term Memory): A type of Recurrent Neural Network (RNN) used for time series forecasting.
-yfinance: A Python library to download financial data from Yahoo Finance.
-TensorFlow/Keras: For building and training the LSTM model.
-Matplotlib: For data visualization (plotting actual vs predicted prices).
-Scikit-learn: For data preprocessing (scaling and splitting data).
-Installation
-Follow these steps to set up the project in your local environment or Google Colab:
+This project implements a stock price prediction model for Apple (AAPL) using Long Short-Term Memory (LSTM) neural networks. The model is trained on historical stock data to predict future prices based on the past stock trends.
 
-##1.Install Required Libraries: If you're using Google Colab, run the following command to install the necessary libraries:
-  ```bash
-    !pip install yfinance tensorflow scikit-learn matplotlib
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Installation Instructions](#installation-instructions)
+- [How to Use](#how-to-use)
+- [Results](#results)
+- [Future Enhancements](#future-enhancements)
+- [License](#license)
+
+## Project Overview
+
+This project uses LSTM (Long Short-Term Memory) networks to predict the future stock prices of Apple (AAPL). We leverage the `yfinance` library to fetch historical stock data and preprocess it for the LSTM model, which is then used to predict future stock prices. The model is trained on historical stock prices, and the predictions are compared with actual values.
+
+## Technologies Used
+
+- **Python**: The main programming language.
+- **TensorFlow/Keras**: For building the LSTM model.
+- **yfinance**: For fetching historical stock data.
+- **Matplotlib**: For data visualization and plotting the results.
+- **scikit-learn**: For data preprocessing and splitting data into training and testing sets.
+
+## Installation Instructions
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Gowthamx0117/apple-stock-prediction.git
+   cd apple-stock-prediction
